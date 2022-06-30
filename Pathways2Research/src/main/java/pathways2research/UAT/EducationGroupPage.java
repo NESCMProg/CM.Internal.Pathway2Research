@@ -94,13 +94,15 @@ public class EducationGroupPage extends base {
 		System.out.println("About to zoom out");
 		System.out.println("zooming");
 		Robot robot = new Robot();
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 6; i++) {
 			robot.keyPress(KeyEvent.VK_CONTROL);
 			robot.keyPress(KeyEvent.VK_SUBTRACT);
 			robot.keyRelease(KeyEvent.VK_SUBTRACT);
 			robot.keyRelease(KeyEvent.VK_SUBTRACT);
+			robot.keyRelease(KeyEvent.VK_SUBTRACT);
 			robot.keyRelease(KeyEvent.VK_CONTROL);
 		}
+		Thread.sleep(1000);
 		bookmarkIcon.click();
 		Log.info("clicked on bookmark in Education group");
 		System.out.println("clicked on bookmark");
