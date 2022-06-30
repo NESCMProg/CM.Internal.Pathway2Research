@@ -5,7 +5,8 @@
 		<classes>
 			<class name="pathways2research.UAT.pathwayHomePageTest" />
 			<class name="pathways2research.UAT.educationGroupPageTest" />
-			
+			<class name="pathways2research.UAT.bussinessGroupPageTest" />
+			<class name="pathways2research.UAT.sustainabilityGroupPageTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
