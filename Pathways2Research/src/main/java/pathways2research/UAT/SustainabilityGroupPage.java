@@ -95,16 +95,16 @@ public class SustainabilityGroupPage extends base{
 		Log.info("Website Link is: " + pathwaysLink);
 		System.out.println("website link is: " + pathwaysLink);
 		Thread.sleep(5000);
-		System.out.println("About to zoom out");
-		System.out.println("zooming");
-		Robot robot = new Robot();
-		for (int i = 0; i < 4; i++) {
-			robot.keyPress(KeyEvent.VK_CONTROL);
-			robot.keyPress(KeyEvent.VK_SUBTRACT);
-			robot.keyRelease(KeyEvent.VK_SUBTRACT);
-			robot.keyRelease(KeyEvent.VK_CONTROL);
-		}
-		Thread.sleep(2000);
+		//System.out.println("About to zoom out");
+		//System.out.println("zooming");
+		//Robot robot = new Robot();
+		//for (int i = 0; i < 4; i++) {
+			//robot.keyPress(KeyEvent.VK_CONTROL);
+			//robot.keyPress(KeyEvent.VK_SUBTRACT);
+			//robot.keyRelease(KeyEvent.VK_SUBTRACT);
+			//robot.keyRelease(KeyEvent.VK_CONTROL);
+		//}
+		//Thread.sleep(2000);
 		bookmarkIcon.click();
 		Log.info("clicked on bookmark in Sustainability group");
 		System.out.println("clicked on bookmark");
