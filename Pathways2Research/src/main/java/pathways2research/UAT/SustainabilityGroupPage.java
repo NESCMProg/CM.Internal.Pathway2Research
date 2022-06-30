@@ -74,7 +74,7 @@ public class SustainabilityGroupPage extends base{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void validateSustainabilityTG() throws InterruptedException {
+	public void validateSustainabilityTG() throws InterruptedException, AWTException {
 		System.out.println("Entered inside method");
 		Thread.sleep(2000);
 		topicRightScroll.click();
