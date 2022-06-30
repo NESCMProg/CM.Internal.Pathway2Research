@@ -4,7 +4,7 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
-
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -89,7 +89,22 @@ public class SustainabilityGroupPage extends base{
 		firstSustainabilityArticle.click();
 		System.out.println("clicked an article");
 		Thread.sleep(5000);
-		
+		websiteMode.click();
+		String pathwaysLink = webLink.getText();
+		Log.info("Website Link is: " + pathwaysLink);
+		System.out.println("website link is: " + pathwaysLink);
+		Thread.sleep(5000);
+		System.out.println("About to zoom out");
+		System.out.println("zooming");
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,475)");
+		Robot robot = new Robot();
+		for (int i = 0; i < 4; i++) {
+			robot.keyPress(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_SUBTRACT);
+			robot.keyRelease(KeyEvent.VK_SUBTRACT);
+			robot.keyRelease(KeyEvent.VK_CONTROL);
+		}
 		bookmarkIcon.click();
 		Log.info("clicked on bookmark in Sustainability group");
 		System.out.println("clicked on bookmark");
