@@ -4,9 +4,8 @@
 	<test thread-count="5" name="Test">
 		<classes>
 			<class name="pathways2research.UAT.pathwayHomePageTest" />
-			<class name="pathways2research.UAT.sustainabilityGroupPageTest" />
 			<class name="pathways2research.UAT.educationGroupPageTest" />
-			<class name="pathways2research.UAT.bussinessGroupPageTest" />
+			
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
