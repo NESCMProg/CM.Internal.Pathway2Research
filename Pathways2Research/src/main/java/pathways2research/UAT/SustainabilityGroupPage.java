@@ -104,6 +104,7 @@ public class SustainabilityGroupPage extends base{
 			robot.keyRelease(KeyEvent.VK_SUBTRACT);
 			robot.keyRelease(KeyEvent.VK_CONTROL);
 		}
+		Thread.sleep(2000);
 		bookmarkIcon.click();
 		Log.info("clicked on bookmark in Sustainability group");
 		System.out.println("clicked on bookmark");
